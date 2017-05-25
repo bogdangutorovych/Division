@@ -162,7 +162,7 @@ public class IntegerDivision {
 		addChars(" ", Integer.toString(dividend).length(), fullResult); 
 		addChars(" ", calculateShiftFirstSecondLines(this.dividend, this.divider), fullResult);
 		fullResult.append("|");
-		addChars("—", divisionResult.length(), fullResult);
+		addChars("-", divisionResult.length(), fullResult);
 		
 		for(int i = 0; (this.dividend >= this.divider) || (this.numberOfFractionDivision > 0 && this.dividend != 0); i++) {
 			while (this.dividend < this.divider) {
@@ -178,7 +178,7 @@ public class IntegerDivision {
 				fullResult.append("|" + divisionResult);
 				fullResult.append("\n" + spaces.toString());
 				addChars(" ", this.firstSplitedString.length() - Integer.toString(resultEachDigit * divider).length(), fullResult);
-				addChars("—", Integer.toString(resultEachDigit * divider).length(), fullResult);
+				addChars("-", Integer.toString(resultEachDigit * divider).length(), fullResult);
 				addChars(" ",this.shiftSpace, spaces);
 				if (this.shiftSpace >= 0) {
 					spaces.append(" ");
@@ -194,7 +194,7 @@ public class IntegerDivision {
 			fullResult.append(resultEachDigit * divider);
 			fullResult.append("\n" + spaces.toString());
 			addChars(" ", this.firstSplitedString.length() - Integer.toString(resultEachDigit * divider).length(), fullResult);
-			addChars("—", Integer.toString(resultEachDigit * divider).length(), fullResult);
+			addChars("-", Integer.toString(resultEachDigit * divider).length(), fullResult);
 			addChars(" ",this.shiftSpace, spaces);
 			if (this.shiftSpace >= 0) {
 				spaces.append(" ");
